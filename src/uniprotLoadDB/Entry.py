@@ -126,7 +126,7 @@ class Entry:
             if GeneName.DEBUG_INSERT_DB:
                 #### TODO : Inserer le lien entre entry et gene_name ####
                 ####          ####
-                '''
+                
                 curDB.prepare("INSERT INTO entry_2_gene_name " \
                             + "(accession, gene_name_id) " \
                             + "values " \
@@ -136,7 +136,7 @@ class Entry:
                 query = """ INSERT INTO entry_2_gene_name
                              (accession, gene_name_id) VALUES (%s, %d) """
                 tuple1 = (self._accession, geneNameId)
-                curDB.execute(query, tuple1)
+                curDB.execute(query, tuple1)'''
                 #### FIN TODO ####
                 
         
